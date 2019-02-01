@@ -9,3 +9,4 @@ name_hash.each do |a, b|
   newarr << a
   newarr
 end
+end
