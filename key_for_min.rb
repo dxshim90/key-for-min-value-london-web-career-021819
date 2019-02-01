@@ -8,5 +8,5 @@ smallest_value = 0
 name_hash.each do |a, b|
   if b < smallest_value
     smallest_value = b
-    smallest_name = 
+    smallest_name = = a
 end
