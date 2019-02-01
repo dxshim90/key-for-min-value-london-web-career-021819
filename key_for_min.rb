@@ -3,13 +3,15 @@
 
 
 def key_for_min_value(name_hash)
-smallest_name = nil
-smallest_value = nil
-name_hash.each do |a, b|
-  if b < smallest_value || smallest_value == nil
-    smallest_value = b
-    smallest_name = a
+ name_of_smallest = nil
+  price_of_smallest = nil
+  # need a value variable declared but not set to anything, to add first value to on first iteration...
+  name_hash.each do |item, price|
+    if price_of_smallest == nil || price < price_of_smallest
+      #price_of_smallest is == nil on first iteration.  Gives something to compare to on subsequent iterations
+      price_of_smallest = price
+      name_of_smallest = item
+    end
   end
-end
-smallest_name
+  name_of_smallest
 end
