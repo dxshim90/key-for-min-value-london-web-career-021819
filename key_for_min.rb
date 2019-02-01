@@ -7,5 +7,6 @@ smallest_key = 0
 smallest_value = 0 
 name_hash.each do |a, b|
   if b < smallest_value
+    smallest_value = b
   
 end
